@@ -1,8 +1,8 @@
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import plantationImage1 from "figma:asset/7acf5aafd868c7a5c5fc56cda8a12adfc56c602d.png";
-import plantationImage2 from "figma:asset/a5d1f92894d19171fdbeb686d8411e54b2edfab6.png";
+import plantationImage1 from "../assets/7acf5aafd868c7a5c5fc56cda8a12adfc56c602d.png";
+import plantationImage2 from "../assets/a5d1f92894d19171fdbeb686d8411e54b2edfab6.png";
 
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);

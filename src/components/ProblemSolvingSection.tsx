@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { HelpCircle, MessageCircle, Search, CheckCircle } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 const commonProblems = [
   {
@@ -234,7 +234,7 @@ export function ProblemSolvingSection() {
 
                   <div>
                     <Label htmlFor="question-category">Problem Category</Label>
-                    <Select value={questionForm.category} onValueChange={(value) => setQuestionForm({ ...questionForm, category: value })}>
+                    <Select value={questionForm.category} onValueChange={(value: string) => setQuestionForm({ ...questionForm, category: value })}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select category" />
                       </SelectTrigger>
@@ -251,7 +251,7 @@ export function ProblemSolvingSection() {
 
                   <div>
                     <Label htmlFor="urgency">Urgency Level</Label>
-                    <Select value={questionForm.urgency} onValueChange={(value) => setQuestionForm({ ...questionForm, urgency: value })}>
+                    <Select value={questionForm.urgency} onValueChange={(value: string) => setQuestionForm({ ...questionForm, urgency: value })}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select urgency" />
                       </SelectTrigger>

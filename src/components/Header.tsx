@@ -4,7 +4,7 @@ import { AuthDialog } from "./AuthDialog";
 import { useAuth } from "./AuthContext";
 import { User, Menu } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
-import logoImage from "figma:asset/4af52e66cb1f2ac0619b3df667c634eb44902bb8.png";
+import logoImage from "../assets/4af52e66cb1f2ac0619b3df667c634eb44902bb8.png";
 
 export function Header() {
   const [authDialogOpen, setAuthDialogOpen] = useState(false);

@@ -6,7 +6,7 @@ import { Label } from './ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Textarea } from './ui/textarea';
 import { useAuth } from './AuthContext';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 import { Sprout, ShoppingCart, Leaf } from 'lucide-react';
@@ -151,7 +151,7 @@ export function SeedsSection() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <Label htmlFor="seedType">Seed Type</Label>
-                    <Select value={orderForm.seedType} onValueChange={(value) => setOrderForm({ ...orderForm, seedType: value })}>
+                    <Select value={orderForm.seedType} onValueChange={(value: string) => setOrderForm({ ...orderForm, seedType: value })}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select seed type" />
                       </SelectTrigger>
