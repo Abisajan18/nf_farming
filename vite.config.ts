@@ -5,6 +5,8 @@
 
   export default defineConfig({
     plugins: [react()],
+    base:"/nf_farming",
+
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -57,8 +59,10 @@
       target: 'esnext',
       outDir: 'build',
     },
+   
     server: {
       port: 3000,
       open: true,
     },
+    
   });
